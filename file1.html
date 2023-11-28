@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website</title>
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333; /* Background color for the navbar */
+            color: #fff; /* Text color for the navbar */
+            padding: 10px;
+        }
+
+        /* Search Box Styles */
+        .search-box {
+            width: 200px;
+            padding: 5px;
+        }
+
+        /* Settings Button Styles */
+        .settings-button {
+            background-color: #555; /* Background color for the button */
+            color: #fff; /* Text color for the button */
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* Settings Menu Styles */
+        .settings-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        /* Appearance Page Styles */
+        .appearance-page {
+            display: none;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Styles for changing website appearance */
+        body.light {
+            background-color: #fff;
+            color: #333;
+        }
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+        body.lightblue {
+            background-color: #b0e0e6;
+            color: #000;
+        }
+        body.lightgreen {
+            background-color: #90ee90;
+            color: #000;
+        }
+        body.lightpink {
+            background-color: #ffb6c1;
+            color: #000;
+        }
+    </style>
+</head>
+<body class="light">
+    <div class="navbar">
+        <input type="text" class="search-box" placeholder="Search">
+        <button class="settings-button" onclick="toggleSettingsMenu()">Settings</button>
+        <ul class="settings-menu" id="settingsMenu">
+            <li><a href="#" onclick="openAppearancePage()">Appearance</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+
+    <div class="appearance-page" id="appearancePage">
+        <h2>Choose Website Style</h2>
+        <label><input type="radio" name="style" value="light" onclick="changeStyle('light')"> Light</label>
+        <label><input type="radio" name="style" value="dark" onclick="changeStyle('dark')"> Dark</label>
+        <label><input type="radio" name="style" value="lightblue" onclick="changeStyle('lightblue')"> Light Blue</label>
+        <label><input type="radio" name="style" value="lightgreen" onclick="changeStyle('lightgreen')"> Light Green</label>
+        <label><input type="radio" name="style" value="lightpink" onclick="changeStyle('lightpink')"> Light Pink</label>
+        <!-- Add more style options as needed -->
+    </div>
+
+    <script>
+        function toggleSettingsMenu() {
+            var menu = document.getElementById("settingsMenu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        function openAppearancePage() {
+            var appearancePage = document.getElementById("appearancePage");
+            appearancePage.style.display = "block";
+        }
+
+        function changeStyle(styleName) {
+            document.body.className = styleName;
+        }
+    </script>
+</body>
+</html>
