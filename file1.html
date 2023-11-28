@@ -1,108 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Your Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes for [Friend's Name]</title>
     <style>
-        /* Navbar Styles */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333; /* Background color for the navbar */
-            color: #fff; /* Text color for the navbar */
-            padding: 10px;
-        }
-
-        /* Search Box Styles */
-        .search-box {
-            width: 200px;
-            padding: 5px;
-        }
-
-        /* Settings Button Styles */
-        .settings-button {
-            background-color: #555; /* Background color for the button */
-            color: #fff; /* Text color for the button */
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-
-        /* Settings Menu Styles */
-        .settings-menu {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            color: #fff;
-            list-style-type: none;
-            padding: 10px;
-        }
-
-        /* Appearance Page Styles */
-        .appearance-page {
-            display: none;
-            background-color: #fff;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
             color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        main {
             padding: 20px;
         }
 
-        /* Styles for changing website appearance */
-        body.light {
-            background-color: #fff;
-            color: #333;
-        }
-        body.dark {
-            background-color: #333;
-            color: #fff;
-        }
-        body.lightblue {
-            background-color: #b0e0e6;
-            color: #000;
-        }
-        body.lightgreen {
-            background-color: #90ee90;
-            color: #000;
-        }
-        body.lightpink {
-            background-color: #ffb6c1;
-            color: #000;
+        footer {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
         }
     </style>
 </head>
-<body class="light">
-    <div class="navbar">
-        <input type="text" class="search-box" placeholder="Search">
-        <button class="settings-button" onclick="toggleSettingsMenu()">Settings</button>
-        <ul class="settings-menu" id="settingsMenu">
-            <li><a href="#" onclick="openAppearancePage()">Appearance</a></li>
-            <!-- Add more menu items as needed -->
-        </ul>
-    </div>
 
-    <div class="appearance-page" id="appearancePage">
-        <h2>Choose Website Style</h2>
-        <label><input type="radio" name="style" value="light" onclick="changeStyle('light')"> Light</label>
-        <label><input type="radio" name="style" value="dark" onclick="changeStyle('dark')"> Dark</label>
-        <label><input type="radio" name="style" value="lightblue" onclick="changeStyle('lightblue')"> Light Blue</label>
-        <label><input type="radio" name="style" value="lightgreen" onclick="changeStyle('lightgreen')"> Light Green</label>
-        <label><input type="radio" name="style" value="lightpink" onclick="changeStyle('lightpink')"> Light Pink</label>
-        <!-- Add more style options as needed -->
-    </div>
+<body>
 
-    <script>
-        function toggleSettingsMenu() {
-            var menu = document.getElementById("settingsMenu");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-        }
+    <header>
+        <h1>Birthday Wishes for Zoya</h1>
+    </header>
 
-        function openAppearancePage() {
-            var appearancePage = document.getElementById("appearancePage");
-            appearancePage.style.display = "block";
-        }
+    <main>
+        <p>Zoya,</p>
+        <p>In the cookie of life, zoya you are my chocolate chips..</p>
+        <p>I am so lucky to have you at my every moment of my life , Don't know how but i started loving you , i dont know this at that time but i think because you are a loving person whom everyone love....
+            Last year ki tarh video to nhi banayi lekin tumhare sath ki share  kru ,bate yad hai  aur aese kaise bhuljata birthday tera ...haaannn.............. </p>
 
-        function changeStyle(styleName) {
-            document.body.className = styleName;
-        }
-    </script>
+            <p>
+                Zoya ka birthday koi bhuull shakta hai  kyaaa..........
+                Happy birthday man
+            </p>
+        <p>May this year bring you closer to your dreams and shower you with happiness. Cheers to another year of amazing adventures and wonderful memories!</p>
+        <p>Wishing you a fantastic birthday celebration!</p>
+        <p>With lots of love,</p>
+        <p>Saurabh</p>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 Saurabh. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
